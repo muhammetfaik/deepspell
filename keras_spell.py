@@ -59,7 +59,7 @@ CONFIG.validation_steps = 10
 CONFIG.number_of_iterations = 10
 #pylint:enable=attribute-defined-outside-init
 
-DIGEST = sha256(json.dumps(CONFIG.__dict__, sort_keys=True)).hexdigest()
+DIGEST = sha256(json.dumps(CONFIG.__dict__, sort_keys=True).encode('utf-8')).hexdigest()
 
 # Parameters for the dataset
 MIN_INPUT_LEN = 5
