@@ -389,7 +389,7 @@ def preprocesses_data_analyze_chars():
 #     LOGGER.info("Read.\nCounting characters:")
 #     counter = Counter(data.replace("\n", ""))
     LOGGER.info("Done.\nWriting to file:")
-    with open(CHAR_FREQUENCY_FILE_NAME, 'wb') as output_file:
+    with open(CHAR_FREQUENCY_FILE_NAME, 'wb',encoding='utf-8') as output_file:
         output_file.write(json.dumps(counter))
     most_popular_chars = {key for key, _value in counter.most_common(CONFIG.number_of_chars)}
     LOGGER.info("The top %s chars are:", CONFIG.number_of_chars)
