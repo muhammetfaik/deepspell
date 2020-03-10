@@ -574,8 +574,8 @@ def train_speller(from_file=None):
 if __name__ == '__main__':
 #     download_the_news_data()
 #     uncompress_data()
-#     preprocesses_data_clean()
-#     preprocesses_data_analyze_chars()
+    preprocesses_data_clean()
+    preprocesses_data_analyze_chars()
 #     preprocesses_data_filter()
 #     preprocesses_split_lines() --- Choose this step or:
 #     preprocesses_split_lines2()
